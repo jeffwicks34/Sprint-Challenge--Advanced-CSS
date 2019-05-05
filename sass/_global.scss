@@ -31,8 +31,19 @@ p {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
+  max-width: 1200px;
+  width: 70%;
+  margin: 0 auto;
+
+  @media ( min-width: $phone ) {
+
+  width: 99%;
+  
+  } 
+
+  @media ( min-width: $desk-top ) {
+
+  width: 70%;
+  }
 }
 
