@@ -1,0 +1,37 @@
+// Navigation code here
+
+.header-section {
+	
+	background: $wild-sand;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+	
+   nav.primary {
+
+   	display: flex;
+   	flex-flow: row nowrap;
+   	justify-content: center;	
+
+       a {
+
+         text-decoration: none;
+         margin-right: 20px;
+         color: $river-bend;
+         font-size: 1.6rem;
+         font-weight: 500;
+
+       }
+
+
+   }
+
+
+
