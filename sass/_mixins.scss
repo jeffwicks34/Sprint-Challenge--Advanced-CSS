@@ -1,1 +1,14 @@
 // Mixins Here
+
+@mixin button-style-mobile($property) {
+	    width: 90%;
+        height: 65px;
+        background: $property;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $property;
+}
+
+
