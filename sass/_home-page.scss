@@ -1,0 +1,187 @@
+// Home Content
+
+$phone: 500px;
+$desk-top: 800px;
+
+@import 'variables';
+
+.home {
+
+  .intro {
+
+    .main-header {
+
+      
+      
+
+      img {
+      
+         border-radius: 5px;
+         width: 100%;
+         height: auto;
+      }
+
+    }
+
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding:0 15px;
+    }
+  
+  }
+
+  .space-images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+
+    img.sky, img.launch {
+
+    @media ( min-width: $phone ) {
+       display: none;
+      }
+
+      @media ( min-width: $desk-top ) {
+      display: inline-block;
+      }
+
+    }
+
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+
+     @media ( min-width: $phone ) {
+
+        width: 90%;
+      }
+
+      @media (min-width: $desk-top) {
+
+      width: 28%;
+
+    }
+      }
+  }
+
+  .visit-planets {
+    padding: 15px;
+    
+
+
+    h3 {
+      margin-top: 5px;
+    }
+
+    p {
+      margin-top: 13px;
+    }
+  }
+
+  .walk {
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 1px solid $main-border-color;
+    display: flex;
+   
+
+    @media ( min-width: $phone ) {
+
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    width: 100%;
+    }
+    
+    @media ( min-width: $desk-top ) {
+
+    flex-flow: row nowrap;
+    padding: 50px 60px;
+    }
+
+    .walk-text {
+     
+
+      @media ( min-width: $phone ) {
+
+      width: 100%;
+      margin-top: 30px;
+      }
+
+      @media ( min-width: $desk-top ) {
+
+      width: 50%;
+      }
+
+      h3 {
+              }
+
+      p {
+        margin-bottom: 26px;
+        margin-top: 10px;
+      }
+
+      .btn {
+
+      @include button-style-mobile($ebony-clay);
+
+      @media (min-width: $desk-top) {
+       @include button-style-desk-top($ebony-clay);
+      }
+
+        &:hover {
+         background: white;
+         border: 1px solid $ebony-clay;
+
+         
+
+          h3 {
+            color: $ebony-clay;
+          }
+
+        }
+
+        h3 {
+
+        color: white;
+        font-size: 2rem;
+        
+        }
+      }
+    }
+
+    .walk-img {
+      width: 46%;
+      margin-left: 4%;
+      
+
+      @media ( min-width: $phone ) {
+
+      width: 100%;
+      
+
+      }
+
+      @media ( min-width: $desk-top ) {
+
+      width: 46%;
+      margin-left: 4%;
+      }
+      
+      img {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+
+      }
+    }
+  }
+}// home
+
+       
